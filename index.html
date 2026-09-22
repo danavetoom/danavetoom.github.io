@@ -3,32 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CV</title>
+    <title>Daniel Avetoom - CV</title>
     <style>
-        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; }
-        h1 { margin-bottom: 5px; }
-        .contact { color: #555; margin-bottom: 20px; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 30px; }
-        .job { margin-bottom: 20px; }
-        .job-title { font-weight: bold; }
-        .date { color: #777; float: right; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            color: #222; 
+        }
+        h1 { margin-bottom: 5px; color: #111; }
+        .location { color: #555; margin-bottom: 15px; font-weight: 500; }
+        .download-btn {
+            display: inline-block;
+            background-color: #0969da;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-size: 0.9em;
+        }
+        .download-btn:hover { background-color: #0451a5; }
+        h2 { border-bottom: 2px solid #eaecef; padding-bottom: 5px; margin-top: 35px; color: #1f2328; }
+        .job, .edu-item { margin-bottom: 22px; }
+        .job-header, .edu-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: bold; font-size: 1.05em; }
+        .company { color: #444; font-weight: 500; }
+        .date { color: #656d76; font-size: 0.9em; }
+        ul { margin-top: 8px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .skills-list p { margin: 5px 0; }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <div class="contact">London, UK • email@example.com • linkedin.com/in/username</div>
-    
-    <h2>Professional Experience</h2>
+
+    <h1>Daniel Avetoom</h1>
+    <div class="location">London, UK</div>
+
+    <!-- Button to download PDF copy -->
+    <a href="Daniel_Avetoom_CV.pdf" download class="download-btn">📄 Download PDF CV</a>
+
+    <h2>Summary</h2>
+    <p>Senior Data Analyst with a strong background in commercial and customer contact data, management, and finance[span_2](start_span)[span_2](end_span). Specialising in BI tools and cross-functional reporting, translating complex data into strategic decisions[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span). Notable projects include CRM segmentation and pipeline management[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span). Proficient in dashboard architecture, Python, and SQL[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span).</p>
+
+    <h2>Experience</h2>
+
     <div class="job">
-        <span class="date">2023 - Present</span>
-        <div class="job-title">Senior Data Analyst — Tech Corp</div>
-        <p>Led cross-functional analytics initiatives, improving data query speeds by 40% and deploying automated dashboards.</p>
+        <div class="job-header">
+            <span class="job-title">Commercial and Contact Data Analyst</span>
+            <span class="date">09/2024 – Present</span>
+        </div>
+        <div class="company">bet365 — Stoke-on-Trent</div>
+        <ul>
+            <li>Redefined VIP segmentation frameworks that overhauled global CRM campaigns, creating High Value Customer groupings that surfaced retention and churn drivers for commercial teams across 15 markets[span_9](start_span)[span_9](end_span).</li>
+            <li>Directed end-to-end licence reporting for Canadian and American market launches, integrating Commercial, Onboarding, and Contact Centre data into executive dashboards that surfaced conversion blockers for C-suite decision-making[span_10](start_span)[span_10](end_span).</li>
+            <li>Built a customer contact propensity model in Power BI analysing 100k daily Zendesk tickets, identifying service gaps that reduced inbound contact volume across 3 territories[span_11](start_span)[span_11](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Consultant</span>
+            <span class="date">05/2023 – 08/2023</span>
+        </div>
+        <div class="company">Mutual Credit Services — Lancaster / Remote</div>
+        <ul>
+            <li>Developed SME engagement plan and go-to-market strategy for fintech startup, identifying operational blockers that de-risked market entry and informed product roadmap prioritisation[span_12](start_span)[span_12](end_span).</li>
+            <li>Reviewed business processes and advised on shortcomings hindering project success[span_13](start_span)[span_13](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Assistant Manager</span>
+            <span class="date">01/2022 – 09/2023</span>
+        </div>
+        <div class="company">Stonegate Pubs — London</div>
+        <ul>
+            <li>Managed front-of-house and kitchen operations, overseeing compliance, staff training, and escalation handling for customer disputes[span_14](start_span)[span_14](end_span).</li>
+            <li>Oversaw cash handling and handled large cash counts at opening and close[span_15](start_span)[span_15](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Team Leader</span>
+            <span class="date">07/2020 – 10/2022</span>
+        </div>
+        <div class="company">Flyerbox Ltd — London</div>
+        <ul>
+            <li>Led distribution teams of 4–10 across London, coordinating logistics and budget allocation for campaigns delivering 500k+ materials to 50+ business clients[span_16](start_span)[span_16](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Finance Internship</span>
+            <span class="date">06/2019 – 08/2019</span>
+        </div>
+        <div class="company">Dotdigital — London</div>
+        <ul>
+            <li>Processed finance workflows in SAGE and Excel, managing payroll and expense reconciliation for a 250-person team[span_17](start_span)[span_17](end_span).</li>
+        </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <p><strong>Data & Analytics:</strong> Power BI (PL-300 certified), SQL, Python, Advanced Excel, Looker, Customer Segmentation, Churn Analysis, KPI Development, CRM Analytics (Zendesk)[span_18](start_span)[span_18](end_span)</p>
+        <p><strong>Technical Tools:</strong> JIRA, DAX, Power Query, MicroStrategy, Data Pipeline Management, ETL Processes, Report Automation[span_19](start_span)[span_19](end_span)</p>
+        <p><strong>Languages:</strong> Spanish (Proficient)[span_20](start_span)[span_20](end_span)</p>
     </div>
 
     <h2>Education</h2>
-    <div class="job">
-        <span class="date">2022</span>
-        <div class="job-title">MSc Management & Finance — University Name</div>
+    
+    <div class="edu-item">
+        <div class="edu-header">
+            <span class="job-title">MSc Management & Finance</span>
+            <span class="date">2023</span>
+        </div>
+        <div class="company">Lancaster University</div>
     </div>
+
+    <div class="edu-item">
+        <div class="edu-header">
+            <span class="job-title">BA History and Spanish</span>
+            <span class="date">2022</span>
+        </div>
+        <div class="company">Lancaster University</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-header">
+            <span class="job-title">A-Levels & GCSEs</span>
+        </div>
+        <div class="company">Hampton School</div>
+    </div>
+
 </body>
 </html>
