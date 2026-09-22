@@ -5,141 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Avetoom - CV</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: 40px auto; 
-            padding: 0 20px; 
-            color: #222; 
+            line-height: 1.5; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 25px; 
+            color: #222222; 
+            background-color: #ffffff;
         }
-        h1 { margin-bottom: 5px; color: #111; }
-        .location { color: #555; margin-bottom: 15px; font-weight: 500; }
+        header {
+            margin-bottom: 25px;
+        }
+        h1 { 
+            font-size: 26px; 
+            font-weight: 700; 
+            color: #005A60; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .contact-info { 
+            color: #444444; 
+            font-size: 14px; 
+            margin-bottom: 15px; 
+        }
+        .contact-info a {
+            color: #005A60;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
         .download-btn {
             display: inline-block;
-            background-color: #0969da;
+            background-color: #005A60;
             color: #ffffff;
             padding: 8px 16px;
-            border-radius: 6px;
+            border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
-            margin-bottom: 25px;
-            font-size: 0.9em;
+            font-size: 13px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease;
         }
-        .download-btn:hover { background-color: #0451a5; }
-        h2 { border-bottom: 2px solid #eaecef; padding-bottom: 5px; margin-top: 35px; color: #1f2328; }
-        .job, .edu-item { margin-bottom: 22px; }
-        .job-header, .edu-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-        .job-title { font-weight: bold; font-size: 1.05em; }
-        .company { color: #444; font-weight: 500; }
-        .date { color: #656d76; font-size: 0.9em; }
-        ul { margin-top: 8px; padding-left: 20px; }
-        li { margin-bottom: 6px; }
-        .skills-list p { margin: 5px 0; }
+        .download-btn:hover { 
+            background-color: #003F43; 
+        }
+        h2 { 
+            font-size: 16px; 
+            font-weight: 700; 
+            color: #005A60; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1.5px solid #B2D8D8; 
+            padding-bottom: 4px; 
+            margin-top: 25px; 
+            margin-bottom: 12px;
+        }
+        .summary-text {
+            font-size: 14px;
+            color: #333333;
+            text-align: justify;
+        }
+        .job, .edu-item, .project-item { 
+            margin-bottom: 18px; 
+        }
+        .job-header, .edu-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline; 
+        }
+        .job-title { 
+            font-weight: 700; 
+            font-size: 15px; 
+            color: #111111; 
+        }
+        .company-loc { 
+            color: #005A60; 
+            font-weight: 600; 
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .date { 
+            color: #555555; 
+            font-size: 13px; 
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        ul { 
+            padding-left: 18px; 
+        }
+        li { 
+            font-size: 13.5px;
+            color: #333333;
+            margin-bottom: 5px; 
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        @media (max-width: 600px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .skill-group h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+        .skill-group p {
+            font-size: 13.5px;
+            color: #333333;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Daniel Avetoom</h1>
-    <div class="location">London, UK</div>
+    <header>
+        <h1>Daniel Avetoom</h1>
+        <div class="contact-info">
+            Stoke ST1 4BZ &nbsp;|&nbsp; 
+            <a href="https://www.linkedin.com/in/danielavetoom/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <a href="Daniel_Avetoom_CV.pdf" download class="download-btn">📄 Download PDF CV</a>
+    </header>
 
-    <!-- Button to download PDF copy -->
-    <a href="Daniel_Avetoom_CV.pdf" download class="download-btn">📄 Download PDF CV</a>
+    <h2>Professional Summary</h2>
+    <p class="summary-text">
+        Senior Data Analyst with an MSc in Management & Finance, specialising in architecting end-to-end BI solutions, commercial data modelling, and customer insights for executive leadership. Proven track record of designing scalable Power BI dashboards, establishing data quality standards, and transforming complex cross-functional datasets into executive narratives that drive commercial decisions and protect revenue margins. Combines strong technical expertise (SQL, Power BI, DAX, Looker, Agentic AI) with background in regulated operational environments to partner with C-suite, Finance, and Operations stakeholders.
+    </p>
 
-    <h2>Summary</h2>
-    <p>Senior Data Analyst with a strong background in commercial and customer contact data, management, and finance[span_2](start_span)[span_2](end_span). Specialising in BI tools and cross-functional reporting, translating complex data into strategic decisions[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span). Notable projects include CRM segmentation and pipeline management[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span). Proficient in dashboard architecture, Python, and SQL[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span).</p>
-
-    <h2>Experience</h2>
+    <h2>Work History</h2>
 
     <div class="job">
         <div class="job-header">
-            <span class="job-title">Commercial and Contact Data Analyst</span>
-            <span class="date">09/2024 – Present</span>
+            <span class="job-title">Senior Customer Experience (CX) Data Analyst</span>
+            <span class="date">05/2026 – Current</span>
         </div>
-        <div class="company">bet365 — Stoke-on-Trent</div>
+        <div class="company-loc">bet365 – Stoke</div>
         <ul>
-            <li>Redefined VIP segmentation frameworks that overhauled global CRM campaigns, creating High Value Customer groupings that surfaced retention and churn drivers for commercial teams across 15 markets[span_9](start_span)[span_9](end_span).</li>
-            <li>Directed end-to-end licence reporting for Canadian and American market launches, integrating Commercial, Onboarding, and Contact Centre data into executive dashboards that surfaced conversion blockers for C-suite decision-making[span_10](start_span)[span_10](end_span).</li>
-            <li>Built a customer contact propensity model in Power BI analysing 100k daily Zendesk tickets, identifying service gaps that reduced inbound contact volume across 3 territories[span_11](start_span)[span_11](end_span).</li>
+            <li>Architected cross-functional commercial, onboarding, and operational reporting frameworks in custom C-suite Power BI dashboards to establish all licence reporting from the ground up for American and Canadian market launches.</li>
+            <li>Defined data governance, validation, and reconciliation standards across high-volume pipelines (processing 100k daily records) to ensure compliance and C-suite report accuracy.</li>
+            <li>Designed and deployed customer propensity models to identify operational friction, significantly reducing inbound service costs and protecting revenue margins across international territories.</li>
+            <li>Integrated Large Language Models (LLMs) and AI workflows (Claude Code) into daily operations to accelerate development cycles and automate complex data pipeline tasks.</li>
         </ul>
     </div>
 
     <div class="job">
         <div class="job-header">
-            <span class="job-title">Consultant</span>
+            <span class="job-title">Commercial Data Insights Analyst</span>
+            <span class="date">05/2025 – 05/2026</span>
+        </div>
+        <div class="company-loc">bet365 – Stoke</div>
+        <ul>
+            <li>Partnered closely with EMEA Country Managers and C-suite stakeholders, consolidating raw data across Acquisition, Commercial Threats, Budgeting, and Forecasting into executive-ready narratives.</li>
+            <li>Overhauled VIP segmentation frameworks across 15 markets to pinpoint churn drivers, resulting in a newly implemented, data-driven CRM strategy that retained 13% of at-risk revenue through targeted marketing campaigns.</li>
+            <li>Spearheaded the transition of legacy reporting workflows from Excel into dynamic, automated visualisation software, including Power BI and Looker, building self-serve analytics capabilities for business stakeholders.</li>
+            <li>Actively coached and upskilled non-technical business stakeholders during the transition to self-serve analytics, ensuring high adoption rates across the EMEA region.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Operations Management Graduate Scheme</span>
+            <span class="date">09/2024 – 05/2025</span>
+        </div>
+        <div class="company-loc">bet365 – Stoke</div>
+        <ul>
+            <li>Completed an extensive cross-functional operations rotation, gaining deep commercial expertise across Fraud and Risk Management, Payments, AML, Verification, and Compliance.</li>
+            <li>Managed and mentored a remote contact team of 12, prioritising coaching and personal development to empower staff and ensure high-quality service delivery for an international user base.</li>
+            <li>Fast-tracked into the Data Insights team mid-rotation to bridge operations and data strategy, leveraging a strong foundational understanding of commercial risk and user behaviour to drive advanced analytics.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="job-title">Consultant (University-Led Project)</span>
             <span class="date">05/2023 – 08/2023</span>
         </div>
-        <div class="company">Mutual Credit Services — Lancaster / Remote</div>
+        <div class="company-loc">Mutual Credit Services – Lancaster / Remote</div>
         <ul>
-            <li>Developed SME engagement plan and go-to-market strategy for fintech startup, identifying operational blockers that de-risked market entry and informed product roadmap prioritisation[span_12](start_span)[span_12](end_span).</li>
-            <li>Reviewed business processes and advised on shortcomings hindering project success[span_13](start_span)[span_13](end_span).</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <span class="job-title">Assistant Manager</span>
-            <span class="date">01/2022 – 09/2023</span>
-        </div>
-        <div class="company">Stonegate Pubs — London</div>
-        <ul>
-            <li>Managed front-of-house and kitchen operations, overseeing compliance, staff training, and escalation handling for customer disputes[span_14](start_span)[span_14](end_span).</li>
-            <li>Oversaw cash handling and handled large cash counts at opening and close[span_15](start_span)[span_15](end_span).</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <span class="job-title">Team Leader</span>
-            <span class="date">07/2020 – 10/2022</span>
-        </div>
-        <div class="company">Flyerbox Ltd — London</div>
-        <ul>
-            <li>Led distribution teams of 4–10 across London, coordinating logistics and budget allocation for campaigns delivering 500k+ materials to 50+ business clients[span_16](start_span)[span_16](end_span).</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <span class="job-title">Finance Internship</span>
-            <span class="date">06/2019 – 08/2019</span>
-        </div>
-        <div class="company">Dotdigital — London</div>
-        <ul>
-            <li>Processed finance workflows in SAGE and Excel, managing payroll and expense reconciliation for a 250-person team[span_17](start_span)[span_17](end_span).</li>
+            <li>Partnered directly with external management to conduct internal business reviews and deliver competitor commercial insights to improve product launch performance.</li>
+            <li>Developed and presented a strategic local business go-to-market plan, demonstrating strong client-facing communication and the ability to spot business development opportunities.</li>
         </ul>
     </div>
 
     <h2>Skills</h2>
-    <div class="skills-list">
-        <p><strong>Data & Analytics:</strong> Power BI (PL-300 certified), SQL, Python, Advanced Excel, Looker, Customer Segmentation, Churn Analysis, KPI Development, CRM Analytics (Zendesk)[span_18](start_span)[span_18](end_span)</p>
-        <p><strong>Technical Tools:</strong> JIRA, DAX, Power Query, MicroStrategy, Data Pipeline Management, ETL Processes, Report Automation[span_19](start_span)[span_19](end_span)</p>
-        <p><strong>Languages:</strong> Spanish (Proficient)[span_20](start_span)[span_20](end_span)</p>
+    <div class="skills-grid">
+        <div class="skill-group">
+            <h3>Data & Analytics</h3>
+            <p>Power BI, SQL, Excel, Looker, DAX, Power Query, ETL Processes, Data Pipeline Management, Insights through Visualisation.</p>
+        </div>
+        <div class="skill-group">
+            <h3>Business Tools</h3>
+            <p>JIRA, CRM Analytics (Zendesk Explore), Report Automation, Agile Working, AI (Large Language Models & Agentic AI).</p>
+        </div>
+        <div class="skill-group" style="grid-column: 1 / -1;">
+            <h3>Commercial & Financial Modelling</h3>
+            <p>Commercial Modelling, Forecasting Models, Customer Segmentation, Churn Analysis, Payment Success Waterfalls.</p>
+        </div>
+    </div>
+
+    <h2>Projects & Development</h2>
+    <div class="project-item">
+        <ul>
+            <li><strong>Workflow Automation via AI:</strong> Designed and deployed custom AI agents through Claude Code to automate repetitive daily workflows and streamline personal task management.</li>
+            <li><strong>Advanced Data Querying:</strong> Independently attained a SQL Certification to advance core database management skills beyond current role requirements.</li>
+        </ul>
     </div>
 
     <h2>Education</h2>
     
     <div class="edu-item">
         <div class="edu-header">
-            <span class="job-title">MSc Management & Finance</span>
-            <span class="date">2023</span>
+            <span class="job-title">MSc: Management & Finance (Merit)</span>
+            <span class="date">10/2022</span>
         </div>
-        <div class="company">Lancaster University</div>
+        <div class="company-loc">Lancaster University – Lancaster</div>
     </div>
 
     <div class="edu-item">
         <div class="edu-header">
-            <span class="job-title">BA History and Spanish</span>
-            <span class="date">2022</span>
+            <span class="job-title">BA: History and Spanish (2:1)</span>
+            <span class="date">09/2019</span>
         </div>
-        <div class="company">Lancaster University</div>
-    </div>
-
-    <div class="edu-item">
-        <div class="edu-header">
-            <span class="job-title">A-Levels & GCSEs</span>
-        </div>
-        <div class="company">Hampton School</div>
+        <div class="company-loc">Lancaster University – Lancaster</div>
     </div>
 
 </body>
